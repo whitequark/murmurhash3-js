@@ -3,13 +3,15 @@
  *  by Peter Zotov (based on Java port by Yonik Seeley) and is placed into the public domain.
  *  The author hereby disclaims copyright to this source code.
  *
- *  This produces exactly the same hash values as the final C++
- *  version of MurmurHash3 and is thus suitable for producing the same hash values across
- *  platforms.
+ *  This produces exactly the same hash values as the final C++ version of MurmurHash3 and
+ *  is thus suitable for producing the same hash values across platforms.
  *
  *  There are two versions of this hash implementation. First interprets the string as a
- *  sequence of bytes, thereby ignoring most significant byte of each codepoint. The
- *  second is
+ *  sequence of bytes, ignoring most significant byte of each codepoint. The second one
+ *  interprets the string as a UTF-16 codepoint sequence, and appends each 16-bit codepoint
+ *  to the hash independently. The latter mode was not written to be compatible with
+ *  any other implementation, but it should offer better performance for JavaScript-only
+ *  applications.
  *
  *  See http://github.com/whitequark/murmurhash3-js for future updates to this file.
  */
