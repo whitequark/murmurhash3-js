@@ -1,6 +1,6 @@
 /*
  *  The MurmurHash3 algorithm was created by Austin Appleby.  This JavaScript port was authored
- *  by Peter Zotov (based on Java port by Yonik Seeley) and is placed into the public domain.
+ *  by whitequark (based on Java port by Yonik Seeley) and is placed into the public domain.
  *  The author hereby disclaims copyright to this source code.
  *
  *  This produces exactly the same hash values as the final C++ version of MurmurHash3 and
